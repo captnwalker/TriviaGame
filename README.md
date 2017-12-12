@@ -4,6 +4,21 @@
 
 ### submitted by Steve Walker
 
+### Known Issues
+
+* If any, will be posted here.
+
+### Psuedo Code
+
+1. Start game/ values set to 0.
+2. Start timer. Duration TBD.
+3. Present Q1.
+4. Only permit 1 answer.
+5. if (correct) add to correct.
+6. else if (wrong) add to wrong.
+7. if (timer not expired) when all Q's answered. Display Score.
+8. else if (timer expires) display Lose. [and maybe a surprise!]
+9. Reset game for next player.
 
 
-![Minion]https://camo.githubusercontent.com/cea15e7c3d7f1faa8848fb9a6a63a1bc57db3b3c/68747470733a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6d696e696f6e2e706e67
+![Grinchcat](https://octodex.github.com/images/grinchtocat.gif)
