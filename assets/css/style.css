@@ -1,0 +1,33 @@
+body {
+    font-family: 'Caesar Dressing', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/pyramids3.jpg);
+    background-color:#eeb96e;
+    color: #d8640c;
+    background-repeat: no-repeat;
+
+}
+
+.quiz {
+    
+    word-wrap: break-word; 
+    word-break: break-all;
+   
+    
+}
+
+.container {
+   
+}
+
+h1 {
+    font-family: 'Caesar Dressing', cursive;
+    font-kerning: auto;
+}
+
+pre {
+    background-color: rgb(231, 132, 61);
+    background: 
+}
