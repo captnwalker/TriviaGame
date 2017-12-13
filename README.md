@@ -6,7 +6,8 @@
 
 ### Known Issues
 
-* If any, will be posted here.
+* Need to connect timer to quiz.
+* Need to hide, the show on click of submit button the .ra <div>.
 
 ### Psuedo Code
 
@@ -19,6 +20,5 @@
 7. if (timer not expired) when all Q's answered. Display Score.
 8. else if (timer expires) display Lose. [and maybe a surprise!]
 9. Reset game for next player.
-
 
 ![Grinchcat](https://octodex.github.com/images/grinchtocat.gif)
