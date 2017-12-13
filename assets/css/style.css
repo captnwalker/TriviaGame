@@ -3,23 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;    
     font-family: 'Roboto', sans-serif;
-    /* background: url(../img/pyramids3.jpg); */
+    background: url(../img/pyramids3.jpg);
     background-color:#eeb96e;
     color: #d8640c;
     background-repeat: no-repeat;
 
-}
-
-.quiz {
-    
-    word-wrap: break-word; 
-    word-break: break-all;
-   
-    
-}
-
-.container {
-   
 }
 
 h1 {
@@ -27,7 +15,23 @@ h1 {
     font-kerning: auto;
 }
 
-pre {
-    background-color: rgb(231, 132, 61);
-    background: 
+p, #results {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#submit{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #eeb96e;
+    color: rgb(3, 18, 104);
+    cursor: pointer;
+    margin-bottom: 18px;
+    border: 0px;
+    border-radius: 12px;
+    padding: 10px;
+}
+#submit:hover{
+    background-color: rgb(16, 105, 139);
+    color: red;
 }
