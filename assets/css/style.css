@@ -1,18 +1,38 @@
 body {
     font-family: 'Caesar Dressing', cursive;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;    
+    font-family: 'Roboto', sans-serif;    
+    text-align: center;       
     font-family: 'Roboto', sans-serif;
     background: url(../img/pyramids3.jpg);
     background-color:#eeb96e;
     color: #d8640c;
     background-repeat: no-repeat;
-
 }
 
 h1 {
     font-family: 'Caesar Dressing', cursive;
-    font-kerning: auto;
+    
+}
+
+.answers {
+    margin-bottom: 20px;
+}
+
+.question {
+    color: #d8640c;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.quiz {
+    text-align: left;
+    padding-left: 50px;
+    color: blue;
+}
+
+.answers label {
+    display: block;
+    background-color: rgb(245, 245, 201);        
 }
 
 p, #results {
@@ -20,18 +40,27 @@ p, #results {
     font-weight: bold;
 }
 
-#submit{
-    font-family: sans-serif;
+.scoreboard {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.ra {
+
+}
+
+#submit {
+    font-family: 'Caesar Dressing', cursive;
     font-size: 16px;
     background-color: #eeb96e;
     color: rgb(3, 18, 104);
-    cursor: pointer;
     margin-bottom: 18px;
     border: 0px;
     border-radius: 12px;
     padding: 10px;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: rgb(16, 105, 139);
     color: red;
 }
