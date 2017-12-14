@@ -2,7 +2,7 @@
 
 ## Trivia Game built in jQuery
 
-### submitted by Steve Walker
+
 
 ### Known Issues
 
@@ -13,6 +13,9 @@
 * Game runs 30 seconds, click submit to get your score.
 * Many dynamic features.
 * The World ends when the clock runs out..stick around for it and turn up your sound!
+
+### Link to Live Game
+<https://captnwalker.github.io/TriviaGame/>
 
 ### Pseudo Code
 
@@ -25,5 +28,7 @@
 7. if (timer not expired) when all Q's answered. Display Score.
 8. else if (timer expires) display Lose. [and maybe a surprise!]
 9. Reset game for next player.
+
+### Author: Steve Walker
 
 ![Grinchcat](https://octodex.github.com/images/grinchtocat.gif)
