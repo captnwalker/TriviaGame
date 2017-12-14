@@ -14,7 +14,7 @@
 * Many dynamic features.
 * The World ends when the clock runs out..stick around for it and turn up your sound!
 
-### Psuedo Code
+### Pseudo Code
 
 1. Start game/ values set to 0.
 2. Start timer. Duration TBD. (30sec.)
