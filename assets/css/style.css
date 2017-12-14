@@ -10,7 +10,8 @@ body {
 }
 
 h1 {
-    font-family: 'Caesar Dressing', cursive;    
+    font-family: 'Caesar Dressing', cursive; 
+    font-size: 50px;
 }
 
 .answers {
@@ -29,7 +30,7 @@ h1 {
 
 .quiz {
     text-align: left;
-    padding-left: 50px;
+    padding-left: 20px;
     color: blue;
 }
 
@@ -46,12 +47,14 @@ p, #results {
 }
 
 .scoreboard {
+    font-family: 'Caesar Dressing', cursive; 
+    font-size: 1.3em;
     padding-top: 50px;
     padding-right: 50px;
 }
 
 .ra {
-    
+    visibility: hidden;
 }
 
 #submit {

@@ -1,15 +1,27 @@
 $(document).ready(function () {
 
-  //Timer 
+  //Game Timer 
   var countDown = 30;
   var quizTimer = setInterval(function () {
     countDown--;
-
     document.getElementById('timer').textContent = countDown;
-
     if (countDown <= 0)
       clearInterval(quizTimer);
   }, 1000)
+
+  //Credits: .mp3 by Mike Koenig
+  var audio = new Audio("./assets/snd/Horror_Ambiance-Mike_Koenig.mp3"); 
+  
+  //TimeUp Events 
+  setTimeout(timeUp, 1000 * 30);
+  function timeUp() {
+
+    audio.play();                        
+    $('body').css("background-image", "url(./assets/img/pyramids1.jpg)");  
+    $('.scoreboard').css('font-size', '2em').css('color', '#FF0000');
+    $('.quiz').css('visibility', 'hidden');
+    $('.ra').css("visibility", "visible");  
+  }
 });
 
 
@@ -22,8 +34,7 @@ $(document).ready(function () {
     //For each question loop
     quizQs.forEach((newQs, qNum) => {
       //Array to store answers
-      var answers = [];
-
+      var answers = []
 
       for (ansLetter in newQs.answers) {
         //Add radio button for each answer - Found this snippet on another site and modified.
@@ -75,7 +86,7 @@ $(document).ready(function () {
     resultsArray.innerHTML = `${numCorrect} out of ${quizQs.length}`;
   }
 
-    //Write ot Scoreboard
+  //Write ot Scoreboard
   var quizContainer = document.getElementById("quiz");
   var resultsArray = document.getElementById("results");
   var submitButton = document.getElementById("submit");

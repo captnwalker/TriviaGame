@@ -7,7 +7,7 @@
 ### Known Issues
 
 * Need to connect timer to quiz.
-* Need to hide, the show on click of submit button the .ra <div>.
+* Need to hide, the show on click of submit button the .ra or change background <div>.
 
 ### Psuedo Code
 
