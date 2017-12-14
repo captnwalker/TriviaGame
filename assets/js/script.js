@@ -10,20 +10,18 @@ $(document).ready(function () {
   }, 1000)
 
   //Credits: .mp3 by Mike Koenig
-  var audio = new Audio("./assets/snd/Horror_Ambiance-Mike_Koenig.mp3"); 
-  
-  //TimeUp Events 
-  setTimeout(timeUp, 1000 * 30);
-  function timeUp() {
+  var audio = new Audio('./assets/snd/Horror_Ambiance-Mike_Koenig.mp3');
 
-    audio.play();                        
-    $('body').css("background-image", "url(./assets/img/pyramids1.jpg)");  
+  //TimeUp Events: sound, new background, hide quiz, reveal Mummy, highlight scoreboard
+  setTimeout(timeUp, 1000 * 2);
+  function timeUp() {
+    audio.play();
+    $('body').css('background-image', 'url(./assets/img/pyramids1.jpg)');
     $('.scoreboard').css('font-size', '2em').css('color', '#FF0000');
     $('.quiz').css('visibility', 'hidden');
-    $('.ra').css("visibility", "visible");  
+    $('.ra').css('visibility', 'visible');
   }
 });
-
 
 //Build Quiz
 (function () {
@@ -40,7 +38,7 @@ $(document).ready(function () {
         //Add radio button for each answer - Found this snippet on another site and modified.
         answers.push(
           `<label>
-              <input type="radio" name="question${qNum}" value="${ansLetter}">
+              <input type='radio' name='question${qNum}' value='${ansLetter}'>
               ${ansLetter} :
               ${newQs.answers[ansLetter]}
              </label>`
@@ -49,18 +47,18 @@ $(document).ready(function () {
 
       //Push question and answers to answers array
       output.push(
-        `<div class="question"> ${newQs.question} </div>
-          <div class="answers"> ${answers.join("")} </div>`
+        `<div class='question'> ${newQs.question} </div>
+        <div class='answers'> ${answers.join('')} </div>`
       );
     });
 
     //Push the questions, answers, and radio buttons to HTML
-    quizContainer.innerHTML = output.join("");
+    quizContainer.innerHTML = output.join('');
   }
 
   //Track answers
   function showResults() {
-    var answerArrays = quizContainer.querySelectorAll(".answers");
+    var answerArrays = quizContainer.querySelectorAll('.answers');
 
     let numCorrect = 0;
 
@@ -76,9 +74,9 @@ $(document).ready(function () {
         numCorrect++;
 
         //Change correct answers to green/wrong answers to red
-        answerArrays[qNum].style.color = "green";
+        answerArrays[qNum].style.color = 'green';
       } else {
-        answerArrays[qNum].style.color = "red";
+        answerArrays[qNum].style.color = 'red';
       }
     });
 
@@ -86,70 +84,71 @@ $(document).ready(function () {
     resultsArray.innerHTML = `${numCorrect} out of ${quizQs.length}`;
   }
 
-  //Write ot Scoreboard
-  var quizContainer = document.getElementById("quiz");
-  var resultsArray = document.getElementById("results");
-  var submitButton = document.getElementById("submit");
+  //Write to Scoreboard
+  var quizContainer = document.getElementById('quiz');
+  var resultsArray = document.getElementById('results');
+  var submitButton = document.getElementById('submit');
+  // Start Quiz
   var quizQs = [
     {
-      question: "Which of the following was NOT an Egyptian God or Goddess??",
+      question: 'Which of the following was NOT an Egyptian God or Goddess??',
       answers: {
-        a: "Atum",
-        b: "Horus",
-        c: "Gollum",
-        d: "Taweret",
+        a: 'Atum',
+        b: 'Horus',
+        c: 'Gollum',
+        d: 'Taweret',
       },
-      correctAnswer: "c"
+      correctAnswer: 'c'
     },
     {
-      question: "Meaning Many Gods, What term describes the Religion of Ancient Egypt?",
+      question: 'Meaning Many Gods, What term describes the Religion of Ancient Egypt?',
       answers: {
-        a: "Monotheistic",
-        b: "Monolethic",
-        c: "Polytheistic",
-        d: "Zoomorphism",
+        a: 'Monotheistic',
+        b: 'Monolethic',
+        c: 'Polytheistic',
+        d: 'Zoomorphism',
       },
-      correctAnswer: "c"
+      correctAnswer: 'c'
     },
     {
-      question: "Which of the following was the main medium of economic exchange for Ancient Egypt??",
+      question: 'Which of the following was the main medium of economic exchange for Ancient Egypt??',
       answers: {
-        a: "Grain",
-        b: "Viziers",
-        c: "Cattle",
-        d: "Egyptian Deniers",
+        a: 'Grain',
+        b: 'Viziers',
+        c: 'Cattle',
+        d: 'Egyptian Deniers',
       },
-      correctAnswer: "a"
+      correctAnswer: 'a'
     },
     {
-      question: "Avoiding this was a major theme in Egyptian Religion.",
+      question: 'Avoiding this was a major theme in Egyptian Religion.',
       answers: {
-        a: "Chaos",
-        b: "Condemnation",
-        c: "Crocodiles",
-        d: "Confusion",
+        a: 'Chaos',
+        b: 'Condemnation',
+        c: 'Crocodiles',
+        d: 'Confusion',
       },
-      correctAnswer: "a"
+      correctAnswer: 'a'
     },
     {
-      question: "The symbols associated with Egyptian language are called.",
+      question: 'The symbols associated with Egyptian language are called.',
       answers: {
-        a: "Cuneiform",
-        b: "Rosetta Symbols",
-        c: "Hieroglyphics",
-        d: "Sanskrit",
+        a: 'Cuneiform',
+        b: 'Rosetta Symbols',
+        c: 'Hieroglyphics',
+        d: 'Sanskrit',
       },
-      correctAnswer: "c"
+      correctAnswer: 'c'
     },
     {
-      question: "Which of the following groups were important in the social hierarchy as they had the duty to teach reading and writing?",
+      question: 'Which of the following groups were important in the social hierarchy as they had the duty to teach reading and writing?',
       answers: {
-        a: "Pharisees",
-        b: "Artisans",
-        c: "Assyrians",
-        d: "Scribes",
+        a: 'Pharisees',
+        b: 'Artisans',
+        c: 'Assyrians',
+        d: 'Scribes',
       },
-      correctAnswer: "d"
+      correctAnswer: 'd'
     }
   ];
 
@@ -157,7 +156,7 @@ $(document).ready(function () {
   newQuiz();
 
   //Button to display score
-  submitButton.addEventListener("click", showResults);
+  submitButton.addEventListener('click', showResults);
   $(function () {
     $('.ra').click(function () {
 
