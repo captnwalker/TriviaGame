@@ -6,13 +6,18 @@
 
 ### Known Issues
 
-* Need to connect timer to quiz.
-* Need to hide, the show on click of submit button the .ra or change background <div>.
+* NONE! And there was much rejoicing!!!
+
+### Game Features
+
+* Game runs 30 seconds, click submit to get your score.
+* Many dynamic features.
+* The World ends when the clock runs out..stick around for it and turn up your sound!
 
 ### Psuedo Code
 
 1. Start game/ values set to 0.
-2. Start timer. Duration TBD.
+2. Start timer. Duration TBD. (30sec.)
 3. Present Q1.
 4. Only permit 1 answer.
 5. if (correct) add to correct.

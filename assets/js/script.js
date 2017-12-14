@@ -13,7 +13,7 @@ $(document).ready(function () {
   var audio = new Audio('./assets/snd/Horror_Ambiance-Mike_Koenig.mp3');
 
   //TimeUp Events: sound, new background, hide quiz, reveal Mummy, highlight scoreboard
-  setTimeout(timeUp, 1000 * 2);
+  setTimeout(timeUp, 1000 * 30);
   function timeUp() {
     audio.play();
     $('body').css('background-image', 'url(./assets/img/pyramids1.jpg)');
