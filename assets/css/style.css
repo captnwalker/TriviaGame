@@ -72,3 +72,27 @@ p, #results {
     background-color: rgb(16, 105, 139);
     color: red;
 }
+
+/* Media Screen */
+
+@media screen and (max-width:980px) {  
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:640px) {
+}
+
+@media (max-width: 640px) {
+    #masthead {
+      position: static;
+    }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    max-width: 100%;
+    }
+}
