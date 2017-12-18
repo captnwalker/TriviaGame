@@ -17,6 +17,12 @@
 ### Link to Live Game
 <https://captnwalker.github.io/TriviaGame/>
 
+### Screenshot of this Project
+
+![Trivia Game - Opening Screen](https://raw.github.com/captnwalker/TriviaGame/master/screenshot/quiz1.png "Ancient Egyptian Themed Timed (30 seconds)Quiz Game")
+
+![Trivia Game - Game Over Screen](https://raw.github.com/captnwalker/TriviaGame/master/screenshot/quiz2.png "Game Over Screen")
+
 ### Pseudo Code
 
 1. Start game/ values set to 0.
